@@ -1,0 +1,197 @@
+/* --- Root Variables & Option 2 Color Palette (Teal & Slate) --- */
+:root {
+    --primary-color: #0f766e;       /* Deep Teal */
+    --primary-hover: #115e59;       /* Darker Teal for Button Hovers */
+    --accent-color: #14b8a6;        /* Bright Mint / Cyan */
+    --badge-bg: #ccfbf1;            /* Soft Mint Background */
+    --dark-bg: #0f172a;             /* Dark Slate Footer Background */
+    --light-bg: #f4fbfb;            /* Fresh Tint Background */
+    --card-shadow: 0 4px 6px -1px rgba(15, 118, 110, 0.05);
+    --card-hover-shadow: 0 12px 20px -3px rgba(15, 118, 110, 0.12);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-bg);
+    color: #334155; /* Cool slate text */
+}
+
+/* --- Clean Modern Navigation Styles --- */
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 15px 0;
+}
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.35rem;
+    color: var(--primary-color) !important;
+}
+.navbar-brand span {
+    color: var(--accent-color);
+}
+.nav-link {
+    font-weight: 500;
+    color: #475569 !important;
+    transition: color 0.25s ease;
+}
+.nav-link:hover, .nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+/* --- Bootstrap Buttons Override --- */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+}
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+/* --- Referencing Portal Home Layout Elements --- */
+.hero-section {
+    min-height: calc(100vh - 75px);
+    background: radial-gradient(circle at 90% 10%, #ecfeff 0%, #ffffff 70%);
+    padding: 60px 0;
+}
+.badge-role {
+    display: inline-block;
+    background-color: var(--badge-bg);
+    color: var(--primary-color);
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+.counter-box {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: var(--card-shadow);
+}
+.counter-box h3 {
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+/* --- Image Elevation & Modern Profile Framing --- */
+.hero-img {
+    max-width: 320px;
+    border-radius: 24px;
+    box-shadow: 0 20px 25px -5px rgba(15, 118, 110, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border: 4px solid #ffffff;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.hero-img:hover {
+    transform: scale(1.03) translateY(-5px);
+}
+
+/* --- Section Formatting Padding --- */
+.section-padding {
+    padding: 70px 0;
+}
+.section-header h2 {
+    font-weight: 700;
+    color: #0f172a;
+}
+
+/* --- Qualification Profile Framework --- */
+.border-start-primary {
+    border-left: 4px solid var(--primary-color);
+}
+.stat-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    box-shadow: var(--card-shadow);
+}
+
+/* --- Subject Layout Matrix & Micro Motion Mechanics --- */
+.subject-card {
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s ease, background-color 0.3s ease;
+    border: 1px solid #e2e8f0 !important;
+}
+.subject-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--card-hover-shadow) !important;
+    background-color: #ffffff;
+    border-color: var(--accent-color) !important;
+}
+.subject-icon {
+    font-size: 2.2rem;
+    transition: transform 0.3s ease;
+}
+.subject-card:hover .subject-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* --- Timeline Layout Component Architecture --- */
+.timeline-icon-box {
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+.timeline-content {
+    border: 1px solid #e2e8f0;
+    box-shadow: var(--card-shadow);
+}
+
+/* --- Resources & Contact Elements Color Mapping --- */
+.bg-light-primary { background-color: #f0fdfa; } /* Light Teal Tint */
+.bg-light-success { background-color: #ecfeff; } /* Light Cyan Tint */
+.bg-light-info { background-color: #f1f5f9; }    /* Light Slate Tint */
+.bg-light-warning { background-color: #fff1f2; } /* Light Rose Tint */
+
+.contact-icon, .resource-icon {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.contact-box {
+    border: 1px solid #e2e8f0;
+}
+
+/* --- Motion Animations Stacks --- */
+.animate-slide-up {
+    animation: slideUp 0.7s ease-out forwards;
+}
+.animate-zoom-in {
+    animation: zoomIn 0.8s ease-out forwards;
+}
+.animate-pulse {
+    animation: pulse 2.5s infinite ease-in-out;
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes zoomIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+/* --- Footer Area --- */
+footer {
+    background-color: var(--dark-bg);
+}

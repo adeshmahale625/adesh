@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Prof. Komal Sunil Munde</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><span>KSM</span> Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About & Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="subjects.html">Subjects Taught</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section-padding bg-light animate-slide-up">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2><i class="fa-solid fa-paper-plane text-primary me-2"></i> Get In Touch</h2>
+                <p class="text-muted">Reach out for academic collaborations, research discussions, or general inquiries</p>
+            </div>
+
+            <div class="row g-4 align-items-center justify-content-center" style="max-width: 900px; margin: 0 auto;">
+                <div class="col-md-5">
+                    <div class="d-flex flex-column gap-3">
+                        <div class="contact-box bg-white p-3 rounded shadow-sm d-flex align-items-center">
+                            <div class="contact-icon text-primary bg-light-primary me-3"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Official Email</h6>
+                                <a href="mailto:komal.munde@mituniversity.edu.in" class="small text-decoration-none text-muted">komal.munde@mituniversity.edu.in</a>
+                            </div>
+                        </div>
+                        <div class="contact-box bg-white p-3 rounded shadow-sm d-flex align-items-center">
+                            <div class="contact-icon text-success bg-light-success me-3"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Call / Message</h6>
+                                <a href="tel:+919960235212" class="small text-decoration-none text-muted">+91 99602 35212</a>
+                            </div>
+                        </div>
+                        <div class="contact-box bg-white p-3 rounded shadow-sm d-flex align-items-center">
+                            <div class="contact-icon text-info bg-light-info me-3"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Campus Location</h6>
+                                <p class="small mb-0 text-muted">Department of CSE, MIT University</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-7">
+                    <div class="bg-white p-4 rounded shadow-sm border">
+                        <h5 class="fw-bold mb-3">Send Academic Inquiry</h5>
+                        <form onsubmit="event.preventDefault(); alert('Inquiry successfully logged!');">
+                            <div class="row g-2">
+                                <div class="col-6"><input type="text" class="form-control form-control-sm" placeholder="Your Name" required></div>
+                                <div class="col-6"><input type="email" class="form-control form-control-sm" placeholder="Your Email" required></div>
+                                <div class="col-12"><input type="text" class="form-control form-control-sm" placeholder="Subject Topic" required></div>
+                                <div class="col-12"><textarea class="form-control form-control-sm" rows="3" placeholder="Write message..." required></textarea></div>
+                                <div class="col-12"><button class="btn btn-sm btn-primary w-100 py-2 shadow-sm" type="submit">Submit Message</button></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-4 bg-white border-top">
+        <div class="container"><p class="mb-0 small text-muted">© 2026 Komal Sunil Munde</p></div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
